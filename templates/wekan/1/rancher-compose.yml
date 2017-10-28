@@ -1,0 +1,21 @@
+.catalog:
+  name: "Wekan"
+  version: "v0.2-newworld"
+  description: "The open-source Trello-like kanban (build with Meteor)"
+  uuid: wekan-1
+  minimum_rancher_version: v0.51.0
+  questions:
+    - variable: WEKAN_PORT
+        description: "port to access wekan webui"
+        label: "Wekan Port"
+        required: true
+        default: "80" 
+        type: "int"
+    - variable: WEKAN_ROOT_URL
+      description: "url to access the wekan webgui"
+      label: "Wekan Root Url"
+      required: true
+      default: "localhost"
+      type: "string"
+
+wekan:
